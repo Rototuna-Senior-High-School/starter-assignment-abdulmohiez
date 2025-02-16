@@ -3,24 +3,6 @@
 #We can use the 'dot format' method to control exactly how our output appears.
 #If you enter text when a number is expected, the program will crash 
 #(unless you implement code to handle the error correctly)
-
-# get input
-
-# ask user for name
-name = input("What is your name? ")
-
-# ask user for two numbers
-
-# add numbers together
-
-# multiply numbers together
-
-# greet user and display math
-print('Hello')
-print("Hello", name)
-
-# get input
-
 # ask user for name
 name = input("What is your name? ")
 
@@ -40,7 +22,6 @@ print("Hello", name)
 print("{} + {} = {}".format(num_1, num_2, add))
 print("{} * {} = {}".format(num_1, num_2, multi))
 
-print(f'{num_1} * {num_2} = {multi}'a4
-)
+print(f'{num_1} * {num_2} = {multi}')
 
 
