@@ -1,6 +1,10 @@
-#ask user how much would he like to spend must be greater and equla to 1$ and less than or equal to 10$
+import random
+
+# Ask user for amount to spend
 amount_spend = int(input("How much would you like to spend? "))
-if amount_spend <= 0 or amount_spend > 10 :
- print("Please enter amount of money you are willing to spend between 1$ and 10$")
+
+# Validate amount
+if amount_spend < 1 or amount_spend > 10:
+    print("Please enter an amount between $1 and $10.")
 else:
- print("You are good to go press <enter> to proceed.")
+    input("You are good to go. Press <Enter> to proceed.")
