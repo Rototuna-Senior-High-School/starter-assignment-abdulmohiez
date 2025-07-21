@@ -1,0 +1,23 @@
+import board
+import digitalio
+import time
+import pwmio
+from adafruit_debouncer import Debouncer
+import analogio 
+import analogio 
+
+led = digitalio.DigitalInOut(board.GP14)
+led.direction = digitalio.Direction.OUTPUT
+
+button1 = digitalio.DigitalInOut(board.GP15)
+button1.direction = digitalio.Direction.INPUT
+button1.pull = digitalio.Pull.UP
+
+knob = analogio.AnalogIn(board.A0)
+
+while True:
+    led.value = True
+    led.duty_cycle = knob.value
+
+
+
